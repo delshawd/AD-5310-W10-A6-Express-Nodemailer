@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Express App</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="main.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <h1>My Website</h1>
+        </header>
+        <main>
+            <p>Welcome to my website!</p>
+            <img src="panda.jpg" alt="panda image" width="300">
+
+            <form action="/post" method="POST" enctype="multipart/form-data">
+                <label for="name">Title:</label>
+                <input type="text" name="title" required>
+                <label for="content">Content:</label>
+                <textarea name="content" required></textarea>
+                <input type="file" name="image" accept="image/*">
+                <button type="submit">Submit</button>
+            </form>
+
+        </main>
+        <footer>
+            <p>&copy; 2026 My Website</p>
+        </footer>
+    </body>
+</html>
